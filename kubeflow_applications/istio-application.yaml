@@ -13,10 +13,16 @@ spec:
     - repoURL: https://github.com/kubeflow/manifests
       path: common/istio-1-17/istio-crds/base
       targetRevision: v1.9-branch
+      directory:
+        recurse: true
     - repoURL: https://github.com/kubeflow/manifests
       path: common/istio-1-17/istio-namespace/base
       targetRevision: v1.9-branch
+      directory:
+        recurse: true
     - repoURL: https://github.com/kubeflow/manifests
       path: common/istio-1-17/istio-install/overlays/oauth2-proxy
       targetRevision: v1.9-branch
+      directory:
+        recurse: true
   project: default

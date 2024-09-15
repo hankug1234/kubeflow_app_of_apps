@@ -16,4 +16,6 @@ spec:
     - repoURL: https://github.com/kubeflow/manifests
       path: common/cert-manager/kubeflow-issuer/base
       targetRevision: v1.9-branch
+      directory:
+        recurse: true
   project: default
