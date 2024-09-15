@@ -14,9 +14,13 @@ spec:
     - repoURL: https://github.com/kubeflow/manifests
       path: common/cert-manager/cert-manager/base
       targetRevision: v1.9-branch
+      kustomize:
+      directory:
+        recurse: true
     - repoURL: https://github.com/kubeflow/manifests
       path: common/cert-manager/kubeflow-issuer/base
       targetRevision: v1.9-branch
+      kustomize:
       directory:
         recurse: true
   project: default
