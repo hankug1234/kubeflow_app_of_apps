@@ -30,4 +30,4 @@ sortOptions:
     orderLast:
     - ValidatingWebhookConfiguration
 resources:
-- ../kuveflow_applications
+- ../kubeflow_applications
