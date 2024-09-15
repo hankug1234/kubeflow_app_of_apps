@@ -29,6 +29,7 @@ sortOptions:
     - PodDisruptionBudget
     orderLast:
     - ValidatingWebhookConfiguration
+    
 resources:
 # Cert-Manager
 - cert-manager-application.yaml
