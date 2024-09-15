@@ -1,0 +1,23 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: kserve
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io
+spec:
+  destination:
+    name: ''
+    namespace: argo-applications
+    server: https://kubernetes.default.svc
+  sources:
+    - repoURL: https://github.com/kubeflow/manifests
+      path: contrib/kserve/kserve
+      targetRevision: v1.9-branch
+    - repoURL: https://github.com/kubeflow/manifests
+      path: contrib/kserve/models-web-app/overlays/kubeflow
+      targetRevision: v1.9-branch
+  project: default
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
