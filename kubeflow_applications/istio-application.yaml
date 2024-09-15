@@ -20,7 +20,3 @@ spec:
       path: common/istio-1-17/istio-install/overlays/oauth2-proxy
       targetRevision: v1.9-branch
   project: default
-  syncPolicy:
-    automated:
-      prune: true
-      selfHeal: true

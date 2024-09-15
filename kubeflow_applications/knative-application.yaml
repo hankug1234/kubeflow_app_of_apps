@@ -20,7 +20,3 @@ spec:
       path: common/istio-1-17/cluster-local-gateway/base
       targetRevision: v1.9-branch
   project: default
-  syncPolicy:
-    automated:
-      prune: true
-      selfHeal: true

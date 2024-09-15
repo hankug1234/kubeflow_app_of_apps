@@ -15,7 +15,3 @@ spec:
       path: apps/jupyter/jupyter-web-app/upstream/overlays/istio
       targetRevision: v1.9-branch
   project: default
-  syncPolicy:
-    automated:
-      prune: true
-      selfHeal: true

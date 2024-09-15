@@ -2,7 +2,6 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: admission-webhook
-
   finalizers:
     - resources-finalizer.argocd.argoproj.io
 spec:
@@ -15,7 +14,3 @@ spec:
       path: apps/admission-webhook/upstream/overlays/cert-manager
       targetRevision: v1.9-branch
   project: default
-  syncPolicy:
-    automated:
-      prune: true
-      selfHeal: true

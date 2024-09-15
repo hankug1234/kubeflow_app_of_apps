@@ -14,7 +14,3 @@ spec:
       path: common/istio-1-17/kubeflow-istio-resources/base
       targetRevision: v1.9-branch
   project: default
-  syncPolicy:
-    automated:
-      prune: true
-      selfHeal: true

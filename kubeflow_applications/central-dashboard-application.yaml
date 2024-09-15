@@ -14,7 +14,3 @@ spec:
       path: apps/centraldashboard/upstream/overlays/oauth2-proxy
       targetRevision: v1.9-branch
   project: default
-  syncPolicy:
-    automated:
-      prune: true
-      selfHeal: true
