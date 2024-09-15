@@ -33,50 +33,49 @@ sortOptions:
 
 resources:
 # Cert-Manager
-- ./cert-manager-application
+- ./kubeflow_applications/cert-manager-application
 # Istio
-- ./istio-application
+- ./kubeflow_applications/istio-application
 # oauth2-proxy
-- ./oauth2-proxy-application
+- ./kubeflow_applications/oauth2-proxy-application
 # Dex
-- ./dex-application
+- ./kubeflow_applications/dex-application
 # KNative
-- ./knative-application
+- ./kubeflow_applications/knative-application
 # Kubeflow namespace
-- ./kubeflow-namespace-application
+- ./kubeflow_applications/kubeflow-namespace-application
 # Kubeflow Roles
-- ./kubeflow-roles-application
+- ./kubeflow_applications/kubeflow-roles-application
 # Kubeflow Istio Resources
-- ./kubeflow-istio-resources-application
+- ./kubeflow_applications/kubeflow-istio-resources-application
 
 
 # Kubeflow Pipelines
-- ./kubeflow-pipelines-application
+- ./kubeflow_applications/kubeflow-pipelines-application
 # Katib
-- ./katib-application
+- ./kubeflow_applications/katib-application
 # Central Dashboard
-- ./central-dashboard-application
+- ./kubeflow_applications/central-dashboard-application
 # Admission Webhook
-- ./admission-webhook-application
+- ./kubeflow_applications/admission-webhook-application
 # Jupyter Web App
-- ./jupyter-web-app-application
+- ./kubeflow_applications/jupyter-web-app-application
 # Notebook Controller
-- ./notebook-controller-application
+- ./kubeflow_applications/notebook-controller-application
 # Profiles + KFAM
-- ./profiles-kfam-application
+- ./kubeflow_applications/profiles-kfam-application
 # PVC Viewer
-- ./pvc-viewer-application
+- ./kubeflow_applications/pvc-viewer-application
 # Volumes Web App
-- ./volumes-web-app-application
+- ./kubeflow_applications/volumes-web-app-application
 # Tensorboards Controller
--  ./temsprbpards-controller-application
+-  ./kubeflow_applications/temsprbpards-controller-application
 # Tensorboard Web App
--  ./tensorboard-web-app-application
+-  ./kubeflow_applications/tensorboard-web-app-application
 # Training Operator
-- ../apps/training-operator/upstream/overlays/kubeflow
+- ./kubeflow_applications/training-operator-application
 # User namespace
-- ../common/user-namespace/base
+- ./kubeflow_applications/user-namespace-application
 
 # KServe
-- ./contrib/kserve/kserve
-- ./contrib/kserve/models-web-app/overlays/kubeflow
+- ./kubeflow_applications/kserve-application
