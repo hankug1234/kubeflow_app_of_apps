@@ -13,7 +13,7 @@ spec:
   source:
     repoURL: https://github.com/kubeflow/manifests
     path: common/oidc-client/oauth2-proxy/overlays/m2m-self-signed
-    targetRevision: v1.9-branch
+    targetRevision: v1.9.1-branch
   project: default
   syncPolicy:
     automated:
