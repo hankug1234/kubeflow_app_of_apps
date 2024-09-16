@@ -14,6 +14,7 @@ spec:
     - repoURL: https://github.com/kubeflow/manifests
       path: apps/training-operator/upstream/overlays/kubeflow
       targetRevision: v1.9-branch
+      kustomize:
       directory:
         recurse: true
   project: default

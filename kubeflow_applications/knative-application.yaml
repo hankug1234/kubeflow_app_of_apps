@@ -14,6 +14,7 @@ spec:
     - repoURL: https://github.com/kubeflow/manifests
       path: common/knative/knative-serving/overlays/gateways
       targetRevision: v1.9-branch
+      kustomize:
       directory:
         recurse: true
     - repoURL: https://github.com/kubeflow/manifests
