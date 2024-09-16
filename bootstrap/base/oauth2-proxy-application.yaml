@@ -10,10 +10,10 @@ spec:
     name: ''
     namespace: argo-applications
     server: https://kubernetes.default.svc
-  sources:
-    - repoURL: https://github.com/kubeflow/manifests
-      path: common/oidc-client/oauth2-proxy/overlays/m2m-self-signed
-      targetRevision: v1.9-branch
+  source:
+    repoURL: https://github.com/kubeflow/manifests
+    path: common/oidc-client/oauth2-proxy/overlays/m2m-self-signed
+    targetRevision: v1.9-branch
   project: default
   syncPolicy:
     automated:
