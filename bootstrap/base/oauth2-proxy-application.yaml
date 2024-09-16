@@ -14,6 +14,12 @@ spec:
     - repoURL: https://github.com/kubeflow/manifests
       path: common/oidc-client/oauth2-proxy/overlays/m2m-self-signed
       targetRevision: v1.9-branch
+      kustomize:
+        components:
+          - ../../components/istio-m2m
+          - ../../components/istio-external-auth
+          - ../../components/allow-unauthenticated-issuer-discovery
+          - ../../components/configure-self-signed-kubernetes-oidc-issuer
   project: default
   syncPolicy:
     automated:
