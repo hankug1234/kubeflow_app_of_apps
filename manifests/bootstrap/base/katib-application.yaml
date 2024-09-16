@@ -1,0 +1,21 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  namespace: argocd
+  name: katib
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io
+spec:
+  destination:
+    name: ''
+    namespace: argo-applications
+    server: https://kubernetes.default.svc
+  sources:
+    - repoURL: https://github.com/hankug1234/kubeflow_app_of_apps
+      path: ../../apps/katib/upstream/installs/katib-with-kubeflow
+      targetRevision: main
+  project: default
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
