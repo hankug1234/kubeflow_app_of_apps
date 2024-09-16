@@ -1,0 +1,27 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  namespace: argocd
+  name: knative
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io
+spec:
+  destination:
+    name: ''
+    namespace: argo-applications
+    server: https://kubernetes.default.svc
+  sources:
+    - repoURL: https://github.com/kubeflow/manifests
+      path: common/knative/knative-serving/overlays/gateways
+      targetRevision: v1.9-branch
+    - repoURL: https://github.com/kubeflow/manifests
+      path: common/knative/knative-eventing/base
+      targetRevision: v1.9-branch
+    - repoURL: https://github.com/kubeflow/manifests
+      path: common/istio-1-22/cluster-local-gateway/base
+      targetRevision: v1.9-branch
+  project: default
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
