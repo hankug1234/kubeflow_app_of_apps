@@ -2,7 +2,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   namespace: argocd
-  name: profile-kfam
+  name: pvc-viewer
   finalizers:
     - resources-finalizer.argocd.argoproj.io
 spec:
@@ -12,11 +12,8 @@ spec:
     server: https://kubernetes.default.svc
   sources:
     - repoURL: https://github.com/kubeflow/manifests
-      path: apps/profiles/upstream/overlays/kubeflow
+      path: apps/pvcviewer-controller/upstream/base
       targetRevision: v1.9-branch
-      kustomize:
-      directory:
-        recurse: true
   project: default
   syncPolicy:
     automated:

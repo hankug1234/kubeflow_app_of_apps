@@ -1,0 +1,48 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+    
+resources:
+# Cert-Manager
+- cert-manager-application.yaml
+# Istio
+- istio-application.yaml
+# oauth2-proxy
+- oauth2-proxy-application.yaml
+# Dex
+- dex-application.yaml
+# KNative
+- knative-application.yaml
+# Kubeflow namespace
+- kubeflow-namespace-application.yaml
+# Kubeflow Roles
+- kubeflow-roles-application.yaml
+# Kubeflow Istio Resources
+- kubeflow-istio-resources-application.yaml
+# Kubeflow Pipelines
+- kubeflow-pipelines-application.yaml
+# Katib
+- katib-application.yaml
+# Central Dashboard
+- central-dashboard-application.yaml
+# Admission Webhook
+- admission-webhook-application.yaml
+# Jupyter Web App
+- jupyter-web-app-application.yaml
+# Notebook Controller
+- notebook-controller-application.yaml
+# Profiles + KFAM
+- profiles-kfam-application.yaml
+# PVC Viewer
+- pvc-viewer-application.yaml
+# Volumes Web App
+- volumes-web-app-application.yaml
+# Tensorboards Controller
+- temsprbpards-controller-application.yaml
+# Tensorboard Web App
+- tensorboard-web-app-application.yaml
+# Training Operator
+- training-operator-application.yaml
+# User namespace
+- user-namespace-application.yaml
+# KServe
+- kserve-application.yaml
