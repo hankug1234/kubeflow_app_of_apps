@@ -24,7 +24,7 @@ spec:
       directory:
         recurse: true
     - repoURL: https://github.com/kubeflow/manifests
-      path: common/istio-1-17/cluster-local-gateway/base
+      path: common/istio-1-22/cluster-local-gateway/base
       targetRevision: v1.9-branch
       kustomize:
       directory:
