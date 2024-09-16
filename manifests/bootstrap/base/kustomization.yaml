@@ -37,7 +37,7 @@ resources:
 # Volumes Web App
 - volumes-web-app-application.yaml
 # Tensorboards Controller
-- temsprbpards-controller-application.yaml
+- tensorboards-controller-application.yaml
 # Tensorboard Web App
 - tensorboard-web-app-application.yaml
 # Training Operator
