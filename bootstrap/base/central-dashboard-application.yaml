@@ -11,8 +11,8 @@ spec:
     namespace: argo-applications
     server: https://kubernetes.default.svc
   sources:
-    - repoURL: https://github.com/kubeflow/manifests
-      path: apps/centraldashboard/upstream/overlays/oauth2-proxy
+    - repoURL: https://github.com/hankug1234/kubeflow_app_of_apps
+      path: bootstrap/base/central-dashboard-oauth2-proxy
       targetRevision: v1.9-branch
   project: default
   syncPolicy:

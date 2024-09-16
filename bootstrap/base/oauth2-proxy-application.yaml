@@ -12,7 +12,7 @@ spec:
     server: https://kubernetes.default.svc
   source:
     repoURL: https://github.com/hankug1234/kubeflow_app_of_apps
-    path: bootstrap/base/temp
+    path: bootstrap/base/oauth2-proxy
     targetRevision: main
   project: default
   syncPolicy:
