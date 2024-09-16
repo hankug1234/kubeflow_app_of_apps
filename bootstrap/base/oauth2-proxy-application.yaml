@@ -15,7 +15,11 @@ spec:
     path: common/oidc-client/oauth2-proxy/overlays/m2m-self-signed
     targetRevision: v1.9-branch
     kustomize:
-      version: v5.2.1
+      components:
+        - ../../components/istio-m2m
+        - ../../components/istio-external-auth
+        - ../../components/allow-unauthenticated-issuer-discovery
+        - ../../components/configure-self-signed-kubernetes-oidc-issuer
   project: default
   syncPolicy:
     automated:
